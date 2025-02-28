@@ -26,4 +26,39 @@ header {
 main{
   background-image: url(../img/cork.png);
   background-size: cover;
+  min-height: 100vh;
+
+  figure{
+    background-color: white;
+    padding: 1rem;
+    position: relative;
+    box-shadow: 1px 1px 7px;
+
+    .pin{
+      position: absolute;
+      top: -10px;
+      left: 148px;
+    }
+
+    figcaption{
+      margin: 0.25rem 0;
+      padding-top: 1rem;
+      
+      .date{
+        font-family: 'Sometype Mono';
+        font-weight: 500;
+        font-size: 1rem;
+        color: gray;
+      }
+      
+      .title{
+        font-family: 'Edu SA Beginner', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+    }
+
+  }
+
 }
