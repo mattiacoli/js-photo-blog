@@ -38,8 +38,10 @@ main{
     .pin{
       position: absolute;
       top: -10px;
-      left: 160px;
+      left: 50%;
+      transform: translateX(-50%);
     }
+
     /* caption */
     figcaption{
       margin: 0.25rem 0;
