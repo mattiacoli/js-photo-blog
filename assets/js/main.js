@@ -32,4 +32,6 @@ fetch(photoBlogUrlEndpoint)
 
     });
 
-  })
+  }) .catch(error => {
+    console.error(error)
+  });
