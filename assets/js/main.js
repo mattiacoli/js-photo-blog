@@ -13,7 +13,7 @@ fetch(photoBlogUrlEndpoint)
       console.log(photo);
 
       const markup = `
-        <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
           <figure>
             <div class="pin">
               <img src="./assets/img/pin.svg" alt="">
