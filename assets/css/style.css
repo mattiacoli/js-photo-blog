@@ -49,6 +49,7 @@ main{
 
     &:hover{
       cursor: pointer;
+      transition: transform .3s;
       transform: rotate(10deg) scale(1.2);
       box-shadow:  4px 5px 5px;
       z-index: +1;
