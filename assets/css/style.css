@@ -14,7 +14,7 @@
   width: 100%;
   min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.596);
-  z-index: +1;
+  z-index: +2
 
 
 }
@@ -44,6 +44,13 @@ main{
     position: relative;
     box-shadow:  2px 3px 3px;
 
+    &:hover{
+      cursor: pointer;
+      transform: rotate(10deg) scale(1.2);
+      box-shadow:  4px 5px 5px;
+      z-index: +1
+    }
+
     @media screen and (max-width: 768px) {
       max-width: 400px;
     }
@@ -54,6 +61,8 @@ main{
       left: 50%;
       transform: translateX(-50%);
     }
+
+
 
     /* caption */
     figcaption{
