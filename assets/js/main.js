@@ -43,8 +43,6 @@ fetch(photoBlogUrlEndpoint)
   });
 
 // close overlay when button clicked
-closeButton.addEventListener('click', () => {
-  toogleClassOverlay()
-})
+closeButton.addEventListener('click', toogleClassOverlay)
 
 
