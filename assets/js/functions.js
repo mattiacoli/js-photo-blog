@@ -42,3 +42,15 @@ function displayPolarid(arr) {
   })
 }
 
+/**
+ * Generates the HTML markup for overlay image
+ * @param {Object} obj - Object containing the photo information.
+ * @param {string} obj.url - URL of the image to display.
+ * @returns HTML markup for overlay image
+ */
+function overlayImgMarkup(obj){
+  return `
+        <div class="select-img mb-3">
+          <img src=${obj.src} alt='${obj.alt}' />
+        </div>`
+}

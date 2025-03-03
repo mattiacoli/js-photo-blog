@@ -24,18 +24,13 @@ fetch(photoBlogUrlEndpoint)
     imageEl.forEach((image) => {
       console.log(image);
 
-      const markup = `
-        <div class="select-img mb-3">
-          <img src=${image.src} alt='${image.alt}' />
-        </div>`
-
       // display overlay element when each image are clicked
       image.addEventListener('click', () => {
         overlayEl.classList.remove('d-none')
         // reset html
         selectedImg.innerHTML = ' '
         // insert image in html node
-        selectedImg.insertAdjacentHTML('afterbegin', markup)
+        selectedImg.insertAdjacentHTML('afterbegin', overlayImgMarkup(image))
 
       })
     })
