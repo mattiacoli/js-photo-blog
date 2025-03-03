@@ -2,6 +2,7 @@
 const photoBlogUrlEndpoint = 'https://lanciweb.github.io/demo/api/pictures/'
 const containerRowEl = document.querySelector('.container .row')
 
+
 //
 fetch(photoBlogUrlEndpoint)
   .then(res => res.json())
@@ -11,6 +12,14 @@ fetch(photoBlogUrlEndpoint)
 
     displayPolarid(photos)
 
+    const imageEl = document.querySelectorAll('.img-fluid')
+    console.log(imageEl);
+
+
   }).catch(error => {
     console.error(error)
-});
+  });
+
+
+
+
