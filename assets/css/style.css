@@ -24,6 +24,13 @@
   #close {
     padding: 1rem 1.5rem;
   }
+  .select-img{
+
+    img{
+      width: 100%;
+    }
+
+  }
 
 }
 
@@ -54,7 +61,7 @@ main {
 
     &:hover {
       cursor: pointer;
-      transition: transform .3s;
+      transition: transform .5s;
       transform: rotate(10deg) scale(1.2);
       box-shadow: 4px 5px 5px;
       z-index: +1;
