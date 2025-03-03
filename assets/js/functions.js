@@ -12,7 +12,7 @@ function polaroidMarkup(photo) {
   <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
     <figure>
 
-    <div class="pin">
+      <div class="pin">
         <img src="./assets/img/pin.svg" alt="">
       </div>
       <img src=${photo.url} alt=''  class="img-fluid"/>
