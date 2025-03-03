@@ -54,6 +54,10 @@ main{
       z-index: +1;
     }
 
+    &:hover .pin{
+      display: none;
+    }
+
     @media screen and (max-width: 768px) {
       max-width: 400px;
     }
