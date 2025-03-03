@@ -14,8 +14,11 @@
   width: 100%;
   min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.596);
-  z-index: +2
+  z-index: +2;
 
+  #close{
+    padding: 1rem 1.5rem;
+  }
 
 }
 
@@ -48,7 +51,7 @@ main{
       cursor: pointer;
       transform: rotate(10deg) scale(1.2);
       box-shadow:  4px 5px 5px;
-      z-index: +1
+      z-index: +1;
     }
 
     @media screen and (max-width: 768px) {

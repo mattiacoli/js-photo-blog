@@ -31,10 +31,9 @@ fetch(photoBlogUrlEndpoint)
 
       // display overlay element when each image are clicked
       image.addEventListener('click', () => {
-        console.log('Clicked');
         overlayEl.classList.remove('d-none')
         // reset html
-        selectedImg.innerHTML= ' '
+        selectedImg.innerHTML = ' '
         // insert image in html node
         selectedImg.insertAdjacentHTML('afterbegin', markup)
 
@@ -43,11 +42,10 @@ fetch(photoBlogUrlEndpoint)
 
   }).catch(error => {
     console.error(error)
-});
+  });
 
-// close overlay when botton clicked
-closeButton.addEventListener('click', ()=>{
+// close overlay when button clicked
+closeButton.addEventListener('click', () => {
   overlayEl.classList.add('d-none')
 })
-
 
