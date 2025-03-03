@@ -8,6 +8,16 @@
   box-sizing: border-box;
 }
 
+/* Overlay */
+#overlay{
+  position:fixed;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.596);
+  z-index: +1;
+
+
+}
 
 /* header */
 
@@ -49,7 +59,7 @@ main{
     figcaption{
       margin: 0.25rem 0;
       padding-top: 1rem;
-      
+
       .date{
         font-family: 'Sometype Mono';
         font-weight: 700;
@@ -61,13 +71,13 @@ main{
         }
 
       }
-      
+
       .title{
         font-family: 'Edu SA Beginner', sans-serif;
         font-size: 1.5rem;
         font-weight: 900;
         text-transform: uppercase;
-        
+
         @media screen and (max-width: 768px) {
           font-size: 1rem;
         }
@@ -77,3 +87,4 @@ main{
   }
 
 }
+
