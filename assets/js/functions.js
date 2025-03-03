@@ -48,9 +48,19 @@ function displayPolarid(arr) {
  * @param {string} obj.url - URL of the image to display.
  * @returns HTML markup for overlay image
  */
-function overlayImgMarkup(obj){
+function overlayImgMarkup(obj) {
   return `
         <div class="select-img mb-3">
           <img src=${obj.src} alt='${obj.alt}' />
         </div>`
+}
+
+/**
+ * Toggles specific CSS classes on selected elements to show/hide overlay
+ * and apply blur effect on header and main elements.
+ */
+function toogleClassOverlay() {
+  overlayEl.classList.toggle('d-none')
+  headerEl.classList.toggle('blured')
+  mainEl.classList.toggle('blured')
 }

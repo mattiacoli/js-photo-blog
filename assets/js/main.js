@@ -28,9 +28,8 @@ fetch(photoBlogUrlEndpoint)
 
       // display overlay element when each image are clicked
       image.addEventListener('click', () => {
-        overlayEl.classList.remove('d-none')
-        headerEl.classList.add('blured')
-        mainEl.classList.add('blured')
+
+        toogleClassOverlay()
         // reset html
         selectedImg.innerHTML = ' '
         // insert image in html node
@@ -45,7 +44,7 @@ fetch(photoBlogUrlEndpoint)
 
 // close overlay when button clicked
 closeButton.addEventListener('click', () => {
-  overlayEl.classList.add('d-none')
-  headerEl.classList.remove('blured')
-  mainEl.classList.remove('blured')
+  toogleClassOverlay()
 })
+
+
