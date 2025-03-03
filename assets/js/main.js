@@ -4,6 +4,8 @@ const containerRowEl = document.querySelector('.container .row')
 const overlayEl = document.getElementById('overlay')
 const closeButton = document.getElementById('close')
 const selectedImg = document.querySelector('.select-img')
+const headerEl =document.querySelector('header')
+const mainEl= document.querySelector('main')
 
 
 
@@ -27,6 +29,8 @@ fetch(photoBlogUrlEndpoint)
       // display overlay element when each image are clicked
       image.addEventListener('click', () => {
         overlayEl.classList.remove('d-none')
+        headerEl.classList.add('blured')
+        mainEl.classList.add('blured')
         // reset html
         selectedImg.innerHTML = ' '
         // insert image in html node
@@ -42,5 +46,6 @@ fetch(photoBlogUrlEndpoint)
 // close overlay when button clicked
 closeButton.addEventListener('click', () => {
   overlayEl.classList.add('d-none')
+  headerEl.classList.remove('blured')
+  mainEl.classList.remove('blured')
 })
-s

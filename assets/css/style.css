@@ -8,15 +8,19 @@
   box-sizing: border-box;
 }
 
+.blured{
+  filter: blur(3px);
+}
+
 /* Overlay */
-#overlay{
-  position:fixed;
+#overlay {
+  position: fixed;
   width: 100%;
   min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.596);
   z-index: +2;
 
-  #close{
+  #close {
     padding: 1rem 1.5rem;
   }
 
@@ -36,26 +40,26 @@ header {
 }
 
 /*  Main */
-main{
+main {
   background-image: url(../img/cork.png);
   min-height: 100vh;
 
   /* polaroid */
-  figure{
+  figure {
     background-color: white;
     padding: 1rem;
     position: relative;
-    box-shadow:  2px 3px 3px;
+    box-shadow: 2px 3px 3px;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
       transition: transform .3s;
       transform: rotate(10deg) scale(1.2);
-      box-shadow:  4px 5px 5px;
+      box-shadow: 4px 5px 5px;
       z-index: +1;
     }
 
-    &:hover .pin{
+    &:hover .pin {
       display: none;
     }
 
@@ -63,7 +67,7 @@ main{
       max-width: 400px;
     }
 
-    .pin{
+    .pin {
       position: absolute;
       top: -10px;
       left: 50%;
@@ -73,11 +77,11 @@ main{
 
 
     /* caption */
-    figcaption{
+    figcaption {
       margin: 0.25rem 0;
       padding-top: 1rem;
 
-      .date{
+      .date {
         font-family: 'Sometype Mono';
         font-weight: 700;
         font-size: 1rem;
@@ -89,7 +93,7 @@ main{
 
       }
 
-      .title{
+      .title {
         font-family: 'Edu SA Beginner', sans-serif;
         font-size: 1.5rem;
         font-weight: 900;
@@ -104,4 +108,3 @@ main{
   }
 
 }
-
